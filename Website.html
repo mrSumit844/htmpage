@@ -4,47 +4,53 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FAMILY Restaurants</title>
+    <title>Restaurant</title>
     <style>
         *{
-           margin:0;
-           padding:0;
-       } 
-       .logo{
-            color:red;
-       }
-       .nav-list{
-           list-style: none;
-           display:flex;
-           padding:10px;
-       }
-       header{
-           background-color: aqua;
-          display: inline-flex;
+            margin:0;
+            padding:0;
+        }
+        .navbar{
+            margin:auto;
+            padding:auto;
+            display:flex;
+        }
+        header{
+            display: -webkit-flex;
+            display: -moz-flex;
+            display: -ms-flex;
+            display: -o-flex;
+            justify-content: space-between;
+            background-color: yellow;
+        }
+
+        a{
+            text-decoration: none;
+        }
+        ul{
+            display: flex;
+            list-style:none;
+            align-items: right;
+           
+        }
+        li{
+            padding:10px;
+        }
         
-       }
-       .nav-list li{
-           text-decoration: none;
-       }
-        </style>
-    
+    </style>
 </head>
 <body>
     <header>
-        <div class="logo">
-            <li>Logo</li>
+        <div class="log">
+            <h3>Logo</h1>
+
         </div>
-        <div class="nav-wrapper">
-            
-            <nav>
-                <ul class="nav-list">
-                    <li class="nav-item"><a href="">Home</a></li>
-                    <li class="nav-item"><a href="">About</a></li>
-                    <li class="nav-item"><a href="">Contact</a></li>
-                </ul>
-            </nav>
+        <div class="navbar">
+            <ul class="nav-items">
+                <li><a href="">Home</a></li>
+                <li><a href="">About</a></li>
+            </ul>
         </div>
     </header>
-    
 </body>
 </html>
